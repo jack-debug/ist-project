@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head><title>jack-debug IST Assign. Term 1</title></head>
+<body bgcolor="black">
+<style>
+p {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+h1 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+h2 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+h3 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+li {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+button {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+</style>
+<script>
+    var a = 1;
+    var x = 0;
+    function increase(){
+        if(a == 6){
+            alert('You have found all the differences!');
+        }
+        else{
+            var textBox = document.getElementById("text");
+            textBox.value = a;
+            a++;
+            var b = 7 - a;
+            alert('You have found a difference, you have ' + b + ' differences left!');
+        }
+    }
+</script>
+<font color="WHITE">
+<h1>Spot the Difference</h1>
+<p class="aligncenter">
+    Original
+    <img src="original.png" alt="Original">
+</p>
+<p class="aligncenter">
+    Altered
+    <img src="altered.png" alt="Altered" usemap="#workmap">
+</p>
+<map name="workmap">
+    <area coords="105,82,314,3" shape="rect" onclick="increase()">
+    <area coords="704,59,734,17" shape="rect" onclick="increase()">
+    <area coords="1007,49,973,90" shape="rect" onclick="increase()">
+    <area coords="1022,445,981,410" shape="rect" onclick="increase()">
+    <area coords="980,212,1007,228" shape="rect" onclick="increase()">
+    <area coords="585,291,520,231" shape="rect" onclick="increase()">
+    <area coords="591,405,632,507" shape="rect" onclick="increase()">
+</map>
+<button onclick="increase()">Test Button</button>
+<p>Click on the differences you spot in the altered image.</p>
+<p>Differences spotted: <input type="text" id="text"></p>
+<br>
+<button onclick="window.open('index.html')">Click to go back to the home page</button>
+</font>
+</body>
+</html>
