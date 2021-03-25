@@ -23,34 +23,28 @@ button {
 }
 </style>
 <script>
-    var a = 1;
+    var a = 9;
     var x = 0;
     function increase(){
-        if(a == 7){
+        var textBox = document.getElementById("text");
+        a = a - 1
+        if (a <= 0) {
             alert('You have found all the differences!');
         }
-        else{
-            var textBox = document.getElementById("text");
-            textBox.value = a;
-            a++;
-            var b = 7 - a;
-            alert('You have found a difference, you have ' + b + ' differences left to find!');
+        else {
+            textBox.value = 9 - a;
+            alert('You have found a difference, you have ' + a + ' differences left to find!');
         }
     }
 </script>
 <font color="WHITE">
     <noscript><h1 style="color:white;font-family:'Courier New'">HEY BUDDY!</h1><h2 style="color:white;font-family:'Courier New'">Your javascript is disabled, enable it for this to work!</h2></noscript>
 <h1>Spot the Difference</h1>
+
 <p class="aligncenter">
     <h2>Original</h2>
-</p>
-<p class="aligncenter">
     <img src="original.png" alt="Original">
-</p>
-<p class="aligncenter">
     <h2>Altered</h2>
-</p>
-<p class="aligncenter">
     <img src="altered.png" alt="Altered" usemap="#workmap">
 </p>
 <map name="workmap">
@@ -61,6 +55,8 @@ button {
     <area coords="980,212,1007,228" shape="rect" onclick="increase()">
     <area coords="585,291,520,231" shape="rect" onclick="increase()">
     <area coords="591,405,632,507" shape="rect" onclick="increase()">
+    <area coords="795,58,761,24" shape="rect" onclick="increase()">
+    <area coords="483,486,558,437" shape="rect" onclick="increase()">
 </map>
 <button onclick="increase()">Test Button</button>
 <p>Click on the differences you spot in the altered image.</p>
