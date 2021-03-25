@@ -19,6 +19,15 @@ button {
 </style>
 <head><title>jack-debug IST Assign. Term 1</title></head>
 <body bgcolor="black">
+<script> // i stole this code from stackoverflow to make audio autoplay in chrome
+  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome){
+      $('#iframeAudio').remove()
+  }
+  else {
+      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+  }
+</script>
 <audio controls autoplay>
   <source src="depeche.mp3" type="audio/mpeg">
 </audio>
@@ -42,8 +51,6 @@ button {
   <li><a href='logo.html' style="color: grey">cool logo</a></li>
 </ul>
 <button onclick="window.open('port.html')">click for a more organised portfolio</button>
-<br>
-<button onclick="window.open('https://www.youtube.com/watch?v=8ybW48rKBME')">Click to get rickrolled</button>
 <br>
 <button onclick="window.open('https://jack-debug.github.io/')">I also have a website with all my projects I've been working on in my own time</button>
 <p>Enjoy your stay!</p>

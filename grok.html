@@ -2,123 +2,57 @@
 <html>
 <style>
 p {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Courier New", cursive;
 }
 h1 {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Courier New", cursive;
 }
 h2 {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Courier New", cursive;
 }
 li {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Courier New", cursive;
 }
 button {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Courier New", cursive;
+}
+div {
+  font-family: "Courier New", cursive;
+  color: green;
 }
 </style>
+<script>
+function toggleShow(Id) {
+  var x = document.getElementById(Id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function printLetterByLetter(destination, message, speed){
+    var i = 0;
+    var interval = setInterval(function(){
+        document.getElementById(destination).innerHTML += message.charAt(i);
+        i++;
+        if (i > message.length){
+            clearInterval(interval);
+        }
+    }, speed);
+}
+</script>
 <head><title>jack-debug IST Assign. Term 1</title></head>
-<body bgcolor="black">
-<font color="WHITE" font='Comic Sans'>
-<h1>Grok Learning</h1>
-<p>This term, we learnt HTML and CSS in Grok.</p>
-<marquee behavior="scroll" direction="right" scrollamount="70">
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-<img src="babi.gif" alt="fast fishe" height='150' width='300'>
-</marquee>
-<button onclick="window.open('index.html')">Click to go back to the home page</button>
+<body bgcolor="black" onload='printLetterByletter("encrypted", "V2VlayAxIC0gSW4gd2VlayAxIEkgbGVhcm50IHNpbXBsZSBzdHlsZSBlbGVtZW50IHRyaWNrcyB0aGF0IGhlbHBlZCBtZSBvdXQ=", 50)'>
+<font color="GREEN">
+<h1>The Grok Logs</h1>
+    <div><p>V2VlayAxIC0gSW4gd2VlayAxIEkgbGVhcm50IHNpbXBsZSBzdHlsZSBlbGVtZW50IHRyaWNrcyB0aGF0IGhlbHBlZCBtZSBvdXQKCldlZWsgMiAtIEluIHdlZWsgMiBJIGxlYXJudCBtb3JlIG<br>Fib3V0IENTUyBhbmQgZGlkIG15IG93biByZXNlYXJjaCBhbmQgbGVhcm5pbmcgaW50byBKYXZhc2NyaXB0IHRvIGFkZCBtb3JlIGludGVyZXN0aW5nIGVsZW1lbnRzIHRv<br>IG15IHBhZ2UuCgpXZWVrIDMgLSBJbiB3ZWVrIDMgSSBsZWFybnQgZXZlbiBtb3JlIENTUywgc3R5bGUgYW5kIEpTLiBJIHN0YXJ0ZWQgaW1wbGVtZW50aW5nIGl0IG1vcmUgaW50b<br>yBteSBwYWdlIHdoaWNoIGNhbiBiZSBzZWVuIGluIHRoaXMgZ3JvayBwYWdlIGFuZCBteSBzcG90IHRoZSBkaWZmZXJlbmNlIHBhZ2Ugd2hlcmUgSSB1c2UgSlM<br>gdG8gbWFrZSBhbiBpbnRlcmFjdGl2ZSBzcG90IHRoZSBkaWZmZXJlbmNlIGdhbWUu</p></div>
+<div id='week1button'><button onclick='printLetterByLetter("wk1De", "Week 1 - In week 1 I learnt simple style element tricks that helped me out", 70);printLetterByLetter("wk2De", "Week 2 - In week 2 I learnt more about CSS and did my own research and learning into Javascript to add more interesting elements to my page.", 70);printLetterByLetter("wk3De", "Week 3 - In week 3 I learnt even more CSS, style and JS. I started implementing it more into my page which can be seen in this grok page and my spot the difference page where I use JS to make an interactive spot the difference game.", 70);'>Decrypt</button></div>
+<br>
+<div id="wk3De"/>
+<div id="wk2De"/>
+<div id="wk1De"/>
+<br>
+<div><button onclick="window.open('index.html')">Click to go back to homepage</button></div>
 </font>
 </body>
 </html>

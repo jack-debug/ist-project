@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head><title>jack-debug IST Assign. Term 1</title></head>
+<body bgcolor="black" onload='action()'>
+<font color="WHITE">
+<script>
+    var harveyHealth = 300;
+    var playerHealth = 300;
+    var randIntPlayer = 200;
+    var hidden = false;
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+    }
+    function punch(){
+        var punchDamage = getRandomInt(200)
+        harveyHealth = harveyHealth - punchDamage
+        alert('You punch Steve Harvey, dealing ' + punchDamage + ' damage. Steve Harvey still has ' + harveyHealth + ' health left.')
+        if (harveyHealth <= 0) {
+            alert('You win! Steve Harvey returns to his cavern. Hibernating, resting, waiting for his next strike...')
+            alert('Starting new game!')
+            harveyHealth = 300
+            playerHealth = 300
+            randIntPlayer = 200
+            alert("Steve Harvey challenges you to a duel! Do you punch or defend?")
+            break
+        }
+        var steveAttack = getRandomInt(randIntPlayer)
+        playerHealth = playerHealth - steveAttack
+        alert('Steve Harvey attacks you, dealing ' + steveAttack + ' damage. You have ' + playerHealth + ' health left.')
+        if (playerHealth <= 0) {
+            alert('You lose! Steve Harvey takes over the world.')
+            alert('Starting new game!')
+            harveyHealth = 300
+            playerHealth = 300
+            randIntPlayer = 200
+            alert("Steve Harvey challenges you to a duel! Do you punch or defend?")
+        }
+    }
+    function defend(){
+        var addedDefend = getRandomInt(50)
+        randIntPlayer = randIntPlayer - addedDefend
+        alert('You defend! An extra ' + addedDefend + ' defense points have been added!')
+        var steveAttack = getRandomInt(randIntPlayer)
+        playerHealth = playerHealth - steveAttack
+        alert('Steve Harvey attacks you, dealing ' + steveAttack + ' damage. You have ' + playerHealth + ' health left.')
+        if (playerHealth <= 0) {
+            alert('You lose! Steve Harvey takes over the world.')
+            alert('Starting new game!')
+            harveyHealth = 300
+            playerHealth = 300
+            randIntPlayer = 200
+            alert("Steve Harvey challenges you to a duel! Do you punch or defend?")
+        }
+    }
+</script>
+<noscript><h1 style="color:white;font-family:'Courier New'">HEY BUDDY!</h1><h2 style="color:white;font-family:'Courier New'">Your javascript is disabled, enable it for this to work!</h2></noscript>
+<h1>EXTRA GAME I PAKCED IN FOR FUN!</h1>
+<h2>BOSS FIGHT: STEVE HARVEY</h2>
+<img src='harvey.png' alt='oh no its steve harvey' onload='alert("Steve Harvey challenges you to a duel! Do you punch or defend?");'>
+<br>
+<button onclick="punch()">Punch</button> <button onclick="defend()">Defend</button>
+<br>
+<br>
+<button onclick="window.open('index.html')">Click to go back to the home page</button>
+</font>
+</body>
+</html>
