@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<script>
+var snd = new Audio("depeche.mp3");    
+</script>
 <style>
 p {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
@@ -22,8 +25,6 @@ button {
 <audio controls autoplay>
   <source src="depeche.mp3" type="audio/mpeg">
 </audio>
-<iframe src="audio/depeche.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-</iframe>
     <noscript><h1 style="color:white;">HEY BUDDY!</h1><h2 style="color:white;">Your javascript is disabled, enable it!</h2></noscript>
 <font color="WHITE" font='Comic Sans'>
 <p class="aligncenter">
@@ -34,7 +35,7 @@ button {
 <p>We have amzing things here</p>
 <ul>
   <li><a href='serbia.html' style="color: grey">amazing Serbian house for sale!</a></li>
-  <li>the fish (his name is bob) <img src="bob.jpeg" alt='bob' height='128' width='160'></li>
+  <li>the fish (his name is bob) <img src="bob.jpeg" alt='bob' height='128' width='160' onload='snd.play();'></li>
   <li>Milk</li>
   <li><a href='grok.html' style="color: grey">grok??</a></li>
   <li>uhhhh</li>
